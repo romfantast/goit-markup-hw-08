@@ -1,0 +1,53 @@
+//============== SOCIAL LIST ============== //
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: center;
+}
+
+.social-item {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--accent-color);
+  }
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  //   modificators for social link and social icon
+
+  &__svg_gray {
+    fill: #afb1b8;
+  }
+
+  &__svg_white {
+    fill: var(--white-color);
+  }
+
+  &__link-white {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.social-item__link:hover .social-item__svg_gray,
+.social-item__link:focus .social-item__svg_gray {
+  fill: #ffffff;
+}
+
+//============== SOCIAL LIST ============== //
