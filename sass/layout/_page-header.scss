@@ -1,16 +1,16 @@
-.header {
+// header
+header {
   border-bottom: 1px solid #ececec;
-
-  &__container {
-    display: flex;
-    align-items: center;
-  }
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  column-gap: 93px;
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .logo {
@@ -33,56 +33,89 @@
   }
 }
 
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .site-list {
-  display: flex;
-  column-gap: 50px;
-
-  &__link {
-    display: block;
-    padding: 24px 0;
-  }
-
-  &__link_active::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    margin-bottom: -1px;
-
-    bottom: 0;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
+  display: none;
 }
-
-.site-list .site-list__link_active {
-  color: var(--accent-color);
-  position: relative;
-}
-
-// contacts (right block)
-
 .contacts-list {
-  margin-left: auto;
-  display: flex;
-  column-gap: 50px;
-  font-weight: 500;
+  display: none;
+}
 
-  &__link {
-    color: var(--gray-color);
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navigation {
+    column-gap: 87px;
+  }
+  .site-list {
     display: flex;
-    align-items: center;
-    column-gap: 10px;
+    column-gap: 50px;
+    &__link {
+      display: block;
+      padding: 24px 0;
+    }
+
+    &__link_active::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      margin-bottom: -1px;
+
+      bottom: 0;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+  }
+  .site-list .site-list__link_active {
+    color: var(--accent-color);
+    position: relative;
   }
 
-  &__icon {
-    fill: #757575;
+  .contacts-list {
+    display: block;
+    margin-left: auto;
+  }
+  .burger-btn {
+    display: none;
+  }
+
+  .contacts-list {
+    &__link {
+      color: var(--gray-color);
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+    }
+
+    &__icon {
+      fill: #757575;
+    }
+  }
+
+  .contacts-list .link:hover .contacts-list__icon,
+  .link:focus .contacts-list__icon {
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
   }
 }
 
-.contacts-list .link:hover .contacts-list__icon,
-.link:focus .contacts-list__icon {
-  fill: var(--accent-color);
-  stroke: var(--accent-color);
+@media screen and (min-width: 1200px) {
+  .navigation {
+    column-gap: 92px;
+  }
+  .contacts-list {
+    display: flex;
+    column-gap: 30px;
+  }
 }

@@ -20,7 +20,7 @@
 	<!-- header block-->
 	<header class="header">
 		<div class="header__container container">
-			<nav class="navigation">
+			<nav class="navigation" width="50">
 				<a class="logo" href="./index.html"><span class="logo__blue-part">Web</span><span
 						class="logo__black-part">Studio</span></a>
 				<ul class="site-list list">
@@ -43,26 +43,60 @@
 						</svg>
 						+38 096 111 11 11</a></li>
 			</ul>
+			<button class="burger-btn" type="button" data-menu-open>
+				<svg lass="icon-burger" width="40" height="40">
+					<use href="./images/icons.svg#icon-burger"></use>
+				</svg>
+			</button>
+
+		</div>
+
+		<div class="mobile-menu is-open" data-menu>
+			<div class="mobile-menu__container container">
+				<button type='button' class="mobile-menu__close-btn" data-menu-close>
+					<svg class="mobile-menu__close-icon" width="40" height="40">
+						<use href="./images/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+				<ul class="mobile-menu__list list">
+					<li class="mobile-menu__item"><a href=""
+							class="mobile-menu__link mobile-menu__active-link link ">Студія</a>
+					</li>
+					<li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Портфоліо</a></li>
+					<li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+				</ul>
+				<ul class="mobile-contacts list">
+					<li class="mobile-contacts__item"><a href="" class="mobile-contacts__link-tel link">+38 096 111 11 11</a>
+					</li>
+					<li class="mobile-contacts__item"><a href="" class="mobile-contacts__link link">info@devstudio.com</a>
+					</li>
+				</ul>
+				<ul class="mobile-social list">
+					<li class="mobile-social__item"><a href="" class="mobile-social__link link">Instagram</a></li>
+					<li class="mobile-social__item"><a href="" class="mobile-social__link link">Twitter</a></li>
+					<li class="mobile-social__item"><a href="" class="mobile-social__link link">Facebook</a></li>
+					<li class="mobile-social__item"><a href="" class="mobile-social__link link">LinkedIn</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
 	<!-- main block -->
 	<main>
 		<!-- hero -->
-		<div class="hero-bg">
+		<!-- <div class="hero-bg">
 			<section class="hero">
 				<div class="container">
 					<h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
 					<button class="btn button-primary" type="button" data-modal-open>Замовити послугу</button>
 				</div>
 			</section>
-		</div>
+		</div> -->
 
 
 		<!-- Advantages -->
-		<section class="advantages section">
+		<!-- <section class="advantages section">
 			<div class="container">
-				<!-- h2 won't to show here -->
 				<h2 class="visually-hidden">Переваги компанії</h2>
 				<ul class="advantages__list list">
 					<li class="advantages__item">
@@ -107,10 +141,10 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- What we do -->
-		<section class="work section">
+		<!-- <section class="work section">
 			<div class="container">
 				<h2 class="title">Чим ми займаємося</h2>
 				<ul class="work__list list">
@@ -147,10 +181,10 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- Team -->
-		<section class="team section">
+		<!-- <section class="team section">
 			<div class="container">
 				<h2 class="title">Наша команда</h2>
 				<ul class="team-list list">
@@ -316,12 +350,12 @@
 					</li>
 				</ul>
 			</div>
-		</section>
+		</section> -->
 
 
 		<!-- clients -->
 
-		<section class="clients section">
+		<!-- <section class="clients section">
 
 			<div class="container">
 				<h2 class="title">Постійні клієнти</h2>
@@ -371,12 +405,12 @@
 				</ul>
 			</div>
 
-		</section>
+		</section> -->
 
 	</main>
 
 	<!-- footer block -->
-	<footer class="footer">
+	<!-- <footer class="footer">
 		<div class="footer-block container">
 			<div class="footer-contacts">
 				<a class="logo footer-logo" href="./index.html"><span class="logo__blue-part">Web</span><span
@@ -453,7 +487,7 @@
 
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 
 
 
@@ -528,6 +562,7 @@
 
 
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
