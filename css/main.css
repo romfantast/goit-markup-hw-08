@@ -29,6 +29,10 @@
   overflow: hidden;
 }
 
+.lock {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -144,6 +148,7 @@ body {
 
 .mobile-menu {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -173,7 +178,7 @@ body {
 }
 .mobile-menu__close-btn {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 15px;
   padding: 0;
   border: none;
@@ -230,6 +235,14 @@ body {
   padding-left: 10px;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contacts__link-tel, .mobile-contacts__link {
+    font-size: 20px;
+  }
+  .mobile-social__item {
+    font-size: 13px;
+  }
+}
 .title {
   font-size: 28px;
   line-height: 1.17;
@@ -595,14 +608,9 @@ body {
   .results {
     flex-direction: column;
     row-gap: 30px;
-    max-width: 450px;
-  }
-  .results-item {
-    margin: 0 auto;
-    width: 250px;
   }
   .results-item__poster {
-    width: 250px;
+    max-width: 100%;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {

@@ -75,14 +75,10 @@
   .results {
     flex-direction: column;
     row-gap: 30px;
-    max-width: 450px;
   }
   .results-item {
-    margin: 0 auto;
-    width: 250px;
-
     &__poster {
-      width: 250px;
+      max-width: 100%;
     }
   }
 }
