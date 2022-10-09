@@ -70,3 +70,27 @@
 .results-item__link:focus .results-item__overlay {
   transform: translateY(0%);
 }
+
+@media screen and (max-width: 479px) {
+  .results {
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 450px;
+  }
+  .results-item {
+    margin: 0 auto;
+    width: 250px;
+
+    &__poster {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .results-item {
+    &__wrapper-correct {
+      height: 146px;
+    }
+  }
+}

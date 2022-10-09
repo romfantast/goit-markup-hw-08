@@ -7,7 +7,6 @@
     border-radius: 4px;
     background-color: transparent;
     padding: 15px 0 15px 16px;
-    min-width: 358px;
     color: var(--transparent-color);
     font-size: var(--secondary-font-size);
     line-height: 1.25;
@@ -34,6 +33,11 @@
 }
 
 @media screen and (min-width: 480px) {
+  .subscribe-form {
+    &__input {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
