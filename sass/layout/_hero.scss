@@ -4,26 +4,28 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-bg.jpg");
+    url("../../images/hero/hero-mobile.jpg");
 
   background-repeat: no-repeat;
   background-size: cover;
 
-  padding-top: 200px;
-  padding-bottom: 200px;
+  color: var(--white-color);
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   max-width: 1600px;
   margin: 0 auto;
 
   &__title {
-    color: var(--white-color);
+    width: 300px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     text-align: center;
+    color: var(--white-color);
 
-    width: 696px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -33,10 +35,83 @@
 .hero-bg {
   background-color: var(--background-color-dark);
 }
-
 .button-primary {
-  padding: 10px 32px;
+  padding: 10px 24px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    &__title {
+      font-size: 26px;
+      line-height: 1.62;
+      width: 360px;
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/hero/hero-mobile@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero/hero-tablet.jpg");
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/hero/hero-tablet@2x.jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-primary {
+    padding: 10px 32px;
+  }
+
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/hero/hero-desktop.jpg");
+
+    &__title {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../../images/hero/hero-desktop@2x.jpg");
+    }
+  }
 }

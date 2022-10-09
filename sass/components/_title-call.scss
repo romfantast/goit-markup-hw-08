@@ -5,7 +5,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  text-align: center;
 
-  padding-top: 12px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .title-call {
+    padding-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-call {
+    padding-top: 15px;
+    text-align: left;
+  }
 }
