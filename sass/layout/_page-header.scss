@@ -1,8 +1,8 @@
 // header
 header {
   border-bottom: 1px solid #ececec;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header {
@@ -15,9 +15,9 @@ header {
 
 .logo {
   font-family: var(--accent-font);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration: none;
 
@@ -43,6 +43,11 @@ header {
 }
 .contacts-list {
   display: none;
+
+  &__icon {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -61,7 +66,7 @@ header {
     column-gap: 50px;
     &__link {
       display: block;
-      padding: 24px 0;
+      padding: 32px 0;
     }
 
     &__link_active::after {
@@ -85,6 +90,24 @@ header {
   .contacts-list {
     display: block;
     margin-left: auto;
+
+    &__item:first-child {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 10px;
+    }
+
+    &__icon-mail {
+      width: 14px;
+      height: 12px;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 14px;
+    }
   }
   .burger-btn {
     display: none;
@@ -116,6 +139,21 @@ header {
   }
   .contacts-list {
     display: flex;
+    align-items: center;
     column-gap: 30px;
+
+    &__item:first-child {
+      margin-bottom: 0;
+    }
+
+    &__icon-mail {
+      width: 16px;
+      height: 12px;
+    }
+
+    &__icon-phone {
+      width: 10px;
+      height: 16px;
+    }
   }
 }
