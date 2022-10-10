@@ -819,6 +819,9 @@ header {
 }
 
 @media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/hero-mobile.jpg");
+  }
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
