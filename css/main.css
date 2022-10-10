@@ -158,7 +158,8 @@ body {
   max-height: 800px;
   background-color: var(--white-color);
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mobile-menu__list {
   display: flex;
@@ -236,7 +237,8 @@ body {
 }
 
 @media screen and (max-width: 479px) {
-  .mobile-contacts__link-tel, .mobile-contacts__link {
+  .mobile-contacts__link-tel,
+  .mobile-contacts__link {
     font-size: 20px;
   }
   .mobile-social__item {
@@ -296,7 +298,8 @@ body {
   height: 44px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-item__link:hover, .social-item__link:focus {
+.social-item__link:hover,
+.social-item__link:focus {
   background-color: var(--accent-color);
 }
 .social-item__svg {
@@ -361,7 +364,8 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -493,7 +497,9 @@ body {
   outline: 2px solid rgba(0, 0, 255, 0.5);
 }
 
-.modal-checkbox:checked + .modal-form__custom-checkbox .modal-form__custom-checkmark {
+.modal-checkbox:checked
+  + .modal-form__custom-checkbox
+  .modal-form__custom-checkmark {
   display: block;
 }
 
@@ -528,12 +534,16 @@ body {
   background-color: var(--background-color-pink);
   border-radius: 4px;
   padding: 6px 25px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.filter__button:hover, .filter__button:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 @media screen and (min-width: 768px) {
@@ -557,9 +567,11 @@ body {
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.results-item__link:hover, .results-item__link:focus {
+.results-item__link:hover,
+.results-item__link:focus {
   display: inline-block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .results-item__thumb {
   position: relative;
@@ -786,7 +798,7 @@ header {
     fill: #757575;
   }
   .contacts-list .link:hover .contacts-list__icon,
-.link:focus .contacts-list__icon {
+  .link:focus .contacts-list__icon {
     fill: var(--accent-color);
     stroke: var(--accent-color);
   }
@@ -814,7 +826,11 @@ header {
 }
 .hero {
   background-color: var(--background-color-dark);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white-color);
@@ -850,7 +866,11 @@ header {
 
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-mobile.jpg");
   }
   .hero__title {
     font-size: 26px;
@@ -858,19 +878,35 @@ header {
     width: 360px;
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 480px) and (min-resolution: 192dpi),
+  screen and (min-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-mobile@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-mobile@2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-tablet.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-tablet@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -880,7 +916,11 @@ header {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-desktop.jpg");
   }
   .hero__title {
     width: 696px;
@@ -888,9 +928,15 @@ header {
     line-height: 1.36;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/hero-desktop@2x.jpg");
   }
 }
 .advantages__list {
@@ -1002,7 +1048,8 @@ header {
 .team-list__item {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   font-size: var(--secondary-font-size);
   line-height: 1.185;
   letter-spacing: 0.03em;
@@ -1055,7 +1102,8 @@ header {
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-list__item:hover, .clients-list__item:focus {
+.clients-list__item:hover,
+.clients-list__item:focus {
   border: 1px solid var(--accent-color);
 }
 .clients-list__link {
@@ -1119,7 +1167,8 @@ footer {
   font-style: normal;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-item__map:hover, .address-item__map:focus {
+.address-item__map:hover,
+.address-item__map:focus {
   color: var(--accent-color);
 }
 .address-item__contact {
@@ -1152,4 +1201,4 @@ footer {
     padding-left: 15px;
     column-gap: 70px;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
