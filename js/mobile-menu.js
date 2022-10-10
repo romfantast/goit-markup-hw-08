@@ -11,6 +11,6 @@
 
   function toggleModal() {
     refs.menu.classList.toggle("is-open");
-    refs.mainBody.classList.toggle("lock");
+    refs.mainBody.classList.toggle("_lock");
   }
 })();
